@@ -20,3 +20,15 @@ class DragAndDropItem implements DragAndDropInterface {
     this.key,
   });
 }
+
+class DragAndDropItemWithSize implements DragAndDropInterface {
+
+	DragAndDropItem item;
+	final Size size;
+
+    DragAndDropItemWithSize({
+		required this.item,
+		required this.size,
+	});
+
+}
